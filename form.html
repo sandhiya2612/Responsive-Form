@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-page">
+        <form action="#" class="form" autocomplete="off">
+            <h3>Resgistration Form</h3>
+            <p>
+                Please complete the following application as per the requirement form.
+            </p>
+            <div class="input-flex">
+                <div>
+                    <label for="firstname" class="form-label">FirstName</label>
+                    <input type="text" id="firstname" placeholder="FirstName" class="form-input"/>
+                </div>
 
+                <div>
+                    <label for="lastname" class="form-label">LastName</label>
+                    <input type="text" id="lastname" placeholder="LastName" class="form-input"/>
+                </div>
+            </div>
+            <div class="input-flex">
+                <div>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" placeholder="Enter your Email" class="form-input"/>
+                    </div>
+                    <div>
+                        <label for="gender" class="form-label">Gender</label>
+                        <select id="gender" class="form-input">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="input-wrap mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <div>
+                        <input type="text" class="form-input w-45" placeholder="Area Code" id="area"/>
+                        <input type="text" class="form-input" placeholder="Phone number"/>
+                    </div>
+                    </div>
+                    <div class="mb-3"> 
+                        <label for="postion" class="form-label">Apply for position</label>
+                        <input type="text" class="form-input" />
+                    </div>
+                    <div class="mb-3"> 
+                        <label for="startdate" class="form-label">When can you start?</label>
+                        <input type="date" class="form-input" id="startdate">
+                        </div>
+                        <div class="mb-3"> 
+                            <label for="adress" class="form-label">Address</label>
+                            <input type="text" class="form-input mb-3" id="address"/>
+                            <input type="text" class="form-input"/>
+                         </div>
+                         <div class="mb-3"> 
+                            <label for="cover" class="form-label">Cover Letter</label>
+                            <textarea id="cover" rows="6" class="form-input"></textarea>
+                            </div>
+                            <div class="form-file-flex">
+                                <label for="upload" class="form-label">Upload Resume</label>
+                                <input type="file" id="upload" class="form-file">
+                            </div>
+                            <button class="btn">Apply Now</button>
+        </form>
+        
+        
+
+    </div>
+    
+</body>
+</html>

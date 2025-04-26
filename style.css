@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color:#536387;
+}
+.main-page{
+    padding: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: white;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0px 1px 3px rgba(0,0,0,0.12);
+    border-radius: 5px;
+}
+.form h3{
+    color: brown;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.form p{
+    font-size: 14px;
+    color:dimgray;
+    margin-bottom: 30px;
+}
+.input-flex{
+    display: flex;
+    gap: 20px;
+    
+}
+.input-flex > div{
+    width: 50%;
+}
+.form-label{
+    display: block;
+    color: brown;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.form-input{
+    width: 100%;
+    padding: 10px 22px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12);
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.5s;
+    resize: none;
+    
+}
+.form-input:focus{
+    border-color: brown;
+}
+
+.form-input::placeholder,
+.form-input[type="date"]::-webkit-datetime-edit-text,
+.form-input[type="date"]::-webkit-datetime-edit-day-field,
+.form-input[type="date"]::-webkit-datetime-edit-month-field,
+.form-input[type="date"]::-webkit-datetime-edit-year-field{
+    font-weight: 300;
+    color: rgba(83,99,135,0.5);
+}
+.input-wrap div{
+    display: flex;
+    gap: 20px;
+}
+.w-45{
+    width: 45% !important;
+}
+.mb-3{
+    margin-bottom: 15px;
+}
+.form-file-flex{
+    display: flex;
+    gap: 20px;
+}
+.form-file{
+    font-size: 14px;
+    color: #536387;
+}
+.form-file::-webkit-file-upload-button{
+    display: none;
+}
+.form-file::before{
+    content: "Upload File";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 12px;
+    background-color: #eeeeee;
+    border: 0.5px solid #fbfbfb;
+    cursor: pointer;
+}
+.btn{
+    background-color: brown;
+    padding: 14px 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+@media (max-width:576px) {
+    .input-flex{
+        flex-direction: column;
+        
+    }
+    .input-flex div{
+        width: 100%;
+    }
+    .input-wrap div{
+        flex-direction: column;
+    }
+    #area{
+        width: 100% !important;
+    }
+}
